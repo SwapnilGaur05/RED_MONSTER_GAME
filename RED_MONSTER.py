@@ -162,9 +162,9 @@ while True:
     draw_fixed_trees()
     draw_sun()
 
-    # Check if 60 seconds have passed to increase difficulty
+    # Check if 30 seconds have passed to increase difficulty
     current_time = time.time()
-    if current_time - last_update_time >= 60:
+    if current_time - last_update_time >= 30:
         # Increase the speed of existing stones
         for stone in stones:
             stone["speed"] += 1  # Increment stone speed
